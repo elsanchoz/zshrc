@@ -12,6 +12,8 @@ alias update='sudo pacman -Syu'
 alias udepend='pacman -Qdt'
 alias purge='sudo pacman -Rsn'
 
+alias gp='git pull $1'
+
 alias exi='exit'
 alias exti='exit'
 alias e='exit'
@@ -55,6 +57,7 @@ alias m="touch $1"
 alias cairogtk="zsh $HOME/.config/cairogtk.sh"
 alias urandomhexdump="cat /dev/urandom | hexdump -c"
 alias fuck="sudo pacman -Rsnv"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 alias cp='cp -v'
 alias rm='rm -v'
