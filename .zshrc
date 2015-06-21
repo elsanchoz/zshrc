@@ -23,7 +23,6 @@ export EDITOR=vim
 
 export PAGER=less
 
-
 HOSTNAME="`hostname`"
 # Enjoy!
 

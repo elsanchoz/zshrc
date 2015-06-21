@@ -1,5 +1,10 @@
 #!/usr/bin/zsh
 
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
+# accept folder as command
+setopt auto_cd
 
 function extract ()
 {
@@ -18,7 +23,7 @@ function extract ()
 			*.zip) unzip $1 ;;
 			*.Z) uncompress $1 ;;
 			*.7z) 7z x $1 ;;
-			*) echo "I don't know how to extract '$1'..." ;;
+			*) echo "I don't know what to do!" ;;
 		esac
 	else
 		echo "'$1' is not a valid file"
